@@ -58,7 +58,6 @@ const config = {
     minimize: true,
     minimizer: [
       new TerserPlugin({
-        cache: true,
         parallel: true,
         include: /\.min\.js$/,
         terserOptions: {
