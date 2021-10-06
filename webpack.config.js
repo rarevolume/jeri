@@ -81,8 +81,11 @@ const config = {
       umd: 'react-dom',
     },
   },
-  node: {
-    fs: 'empty'
+  resolve: {
+    extensions: [".ts", ".tsx", ".js", ".css"],
+    fallback: {
+      fs: false,
+    },
   },
 };
 
