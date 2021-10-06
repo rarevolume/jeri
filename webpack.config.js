@@ -60,7 +60,6 @@ const config = {
       new TerserPlugin({
         cache: true,
         parallel: true,
-        sourceMap: true,
         include: /\.min\.js$/,
         terserOptions: {
         }
