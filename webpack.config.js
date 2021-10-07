@@ -16,9 +16,9 @@ const config = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json', '.glsl', '.wasm'],
-    fallback: {
-      fs: false,
-    },
+  },
+  node: {
+    fs: 'empty',
   },
   module: {
     rules: [
