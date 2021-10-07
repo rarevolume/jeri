@@ -15,7 +15,10 @@ const config = {
     publicPath: './',
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json', '.glsl', '.wasm']
+    extensions: ['.ts', '.tsx', '.js', '.json', '.glsl', '.wasm'],
+    fallback: {
+      fs: false,
+    },
   },
   module: {
     rules: [
@@ -79,12 +82,6 @@ const config = {
       commonjs: 'react-dom',
       amd: 'react-dom',
       umd: 'react-dom',
-    },
-  },
-  resolve: {
-    extensions: [".ts", ".tsx", ".js", ".css"],
-    fallback: {
-      fs: false,
     },
   },
 };
